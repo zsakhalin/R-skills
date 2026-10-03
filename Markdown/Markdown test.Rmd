@@ -1,0 +1,20 @@
+---
+title: "Markdown test"
+author: 'zsakhalin '
+date: "Oktober 3 2026"
+output:
+  html_document: default
+  pdf_document: default
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## R Markdown
+More details here <http://rmarkdown.rstudio.com>. 
+```{r cars}
+summary(cars)
+```
+## Including plots
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
