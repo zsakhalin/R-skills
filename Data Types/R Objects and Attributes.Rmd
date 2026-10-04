@@ -1,0 +1,11 @@
+# Basic or "atomic" classes of objects
+1. character
+2. numeric(real number)
+3. integer
+4. complex
+5. logical
+
+## Most basic object is vector
+- Empty vector vector()
+- Vector can only contain objects of the same class
+- Exception: list is the vector, but can contain different objects

@@ -1,0 +1,49 @@
+---
+title: "Vectors"
+output: html_document
+---
+## Creating v
+### c() - concatenate, func to create vector of obj
+```
+n <- c(0.5,0.6)       # numeric  
+l1 <- c(TRUE,FALSE)   # logical  
+l2 <- c(T,F)          # logical  
+ch <- c("a", "b")     # character  
+in <- 1:10            # integer  
+co <- c(1+0i, 2-10i)  # complex  
+```
+
+### vector() - func to create vector
+```
+> x <- vector("numeric", length = 10)  
+> x  
+ [1] 0 0 0 0 0 0 0 0 0 0
+```
+
+## Explicit Coercion *as.type_name(obj)* - явное приведение типов
+```
+> v <- 0:6
+> class(v)
+[1] "integer"
+> v
+[1] 0 1 2 3 4 5 6
+> as.logical(v)
+[1] FALSE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+> as.character(v)
+[1] "0" "1" "2" "3" "4" "5" "6"
+> as.numeric(v)
+[1] 0 1 2 3 4 5 6
+
+> alf <- c("a", "b", "c")
+> as.numeric(alf)
+[1] NA NA NA
+Warning message:
+NAs introduced by coercion 
+
+> as.logical(alf)
+[1] NA NA NA
+> as.complex(alf)
+[1] NA NA NA
+
+```
+
